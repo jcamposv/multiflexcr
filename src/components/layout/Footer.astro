@@ -1,0 +1,58 @@
+---
+import { siteConfig, footer } from "../../data/site";
+---
+
+<footer class="bg-slate-deep text-white/60 relative">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
+      <!-- Brand -->
+      <div class="md:col-span-5">
+        <div class="mb-6 bg-white inline-flex p-3 rounded-xl">
+          <img src="/logo.png" alt={siteConfig.name} class="h-12 w-auto object-contain" />
+        </div>
+        <p class="text-white/40 text-sm leading-relaxed max-w-sm">
+          Soluciones integrales en limpieza, mantenimiento y gestión de operaciones. Optimizamos la operación de su empresa.
+        </p>
+        <div class="mt-6 text-[11px] uppercase tracking-widest text-white/25 font-semibold">
+          www.multiflexcr.com
+        </div>
+      </div>
+
+      <!-- Servicios -->
+      <div class="md:col-span-3">
+        <h3 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/30 mb-5">Servicios</h3>
+        <ul class="space-y-2.5 text-sm">
+          {footer.sections.servicios.map((s) => (
+            <li><a href="#servicios" class="text-white/50 hover:text-white transition-colors">{s}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div class="md:col-span-4">
+        <h3 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/30 mb-5">Contacto</h3>
+        <div class="space-y-4 text-sm">
+          {footer.contact.phones.map((p) => (
+            <div>
+              <span class="text-white/30 text-xs block mb-0.5">{p.label}</span>
+              <a href={`tel:${p.number}`} class="text-white/50 hover:text-white transition-colors">{p.number}</a>
+            </div>
+          ))}
+          <div class="pt-2">
+            {footer.contact.emails.map((e) => (
+              <a href={`mailto:${e}`} class="text-white/50 hover:text-white transition-colors text-xs block mb-1">{e}</a>
+            ))}
+          </div>
+          <div class="pt-2 text-white/30 text-xs">
+            {footer.hours}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/25 text-xs">&copy; {new Date().getFullYear()} {siteConfig.name}. Todos los derechos reservados.</p>
+      <p class="text-white/25 text-xs">Costa Rica</p>
+    </div>
+  </div>
+</footer>

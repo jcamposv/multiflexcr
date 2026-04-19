@@ -1,0 +1,73 @@
+---
+import { hero } from "../../data/site";
+---
+
+<section class="relative pt-28 lg:pt-36 pb-8 lg:pb-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mb-10 lg:mb-14">
+      <h1 class="font-[family-name:var(--font-display)] text-[clamp(2.5rem,6vw,5.5rem)] font-extrabold leading-[1.05] tracking-[-0.03em] text-slate-deep">
+        Soluciones Integrales<br/>
+        <span class="text-mf-green">Para Su Empresa</span>
+      </h1>
+      <p class="mt-6 text-slate-mid text-base lg:text-lg leading-relaxed max-w-2xl">
+        {hero.description}
+      </p>
+    </div>
+
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-12 gap-3 lg:gap-4" data-animate>
+      <!-- Stats card -->
+      <div class="col-span-2 lg:col-span-3 bg-mf-blue-deeper text-white rounded-[1.25rem] p-6 lg:p-7 flex flex-col justify-between min-h-[200px]">
+        <div>
+          <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-white/30 mb-5">Multiflex en cifras</p>
+          <div class="space-y-5">
+            <div>
+              <span class="text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-display)] text-mf-green-light">20+</span>
+              <p class="text-white/50 text-xs font-medium mt-0.5">Años de experiencia en el sector</p>
+            </div>
+            <div class="h-px bg-white/[0.06]"></div>
+            <div>
+              <span class="text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-display)]">7</span>
+              <p class="text-white/50 text-xs font-medium mt-0.5">Servicios especializados</p>
+            </div>
+            <div class="h-px bg-white/[0.06]"></div>
+            <div>
+              <span class="text-3xl lg:text-4xl font-extrabold font-[family-name:var(--font-display)]">100%</span>
+              <p class="text-white/50 text-xs font-medium mt-0.5">Compromiso con la calidad</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mt-5">
+          <span class="text-[9px] font-semibold text-white/30 border border-white/[0.08] rounded-full px-2.5 py-1">ISO 9001</span>
+          <span class="text-[9px] font-semibold text-white/30 border border-white/[0.08] rounded-full px-2.5 py-1">ISO 14001</span>
+          <span class="text-[9px] font-semibold text-white/30 border border-white/[0.08] rounded-full px-2.5 py-1">ISO 45001</span>
+        </div>
+      </div>
+
+      <!-- Main hero image -->
+      <div class="col-span-2 lg:col-span-5 rounded-[1.25rem] overflow-hidden min-h-[220px] lg:min-h-[320px]">
+        <img src="/oficina.jpg" alt="Oficina moderna" class="w-full h-full object-cover" loading="eager" />
+      </div>
+
+      <!-- CTA card + small image -->
+      <div class="col-span-1 lg:col-span-2 flex flex-col gap-3 lg:gap-4">
+        <a href="#contacto" class="flex-1 bg-mf-green hover:bg-mf-green-dark text-white rounded-[1.25rem] p-6 flex flex-col justify-between transition-colors min-h-[120px]">
+          <span class="font-[family-name:var(--font-display)] text-xl lg:text-2xl font-bold leading-tight">Conozca más</span>
+          <div class="flex justify-end mt-3">
+            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+            </div>
+          </div>
+        </a>
+        <div class="flex-1 rounded-[1.25rem] overflow-hidden min-h-[120px]">
+          <img src="/limpieza.jpg" alt="Servicios de limpieza profesional" class="w-full h-full object-cover" loading="eager" />
+        </div>
+      </div>
+
+      <!-- Team image -->
+      <div class="col-span-1 lg:col-span-2 rounded-[1.25rem] overflow-hidden min-h-[220px]">
+        <img src="/jardineria.jpg" alt="Servicios de jardinería" class="w-full h-full object-cover" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>

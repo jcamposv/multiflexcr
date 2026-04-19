@@ -1,0 +1,48 @@
+---
+import { team } from "../../data/site";
+---
+
+<section id="equipo" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-animate>
+      <p class="text-[11px] font-bold uppercase tracking-[0.25em] text-mf-green/70 mb-4">Equipo directivo</p>
+      <h2 class="font-[family-name:var(--font-display)] text-3xl lg:text-[2.75rem] font-extrabold text-slate-deep leading-[1.12] mb-4">
+        {team.headline}
+      </h2>
+      <p class="text-slate-mid text-[15px] leading-relaxed max-w-xl mb-14">
+        Décadas de experiencia en gestión de facilidades, operaciones corporativas y desarrollo de negocios en entornos multinacionales.
+      </p>
+
+      <!-- Horizontal layout, not centered cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {team.members.map((member, i) => (
+          <div class={`flex items-start gap-6 rounded-[1.25rem] p-7 border border-black/[0.04] ${i === 0 ? "bg-mf-blue-deeper text-white" : "bg-ivory"}`}>
+            {member.photo ? (
+              <div class="w-20 h-20 rounded-full shrink-0 bg-gradient-to-b from-mf-green/10 to-mf-blue/10 border-2 border-mf-green/20 overflow-hidden">
+                <img src={member.photo} alt={member.name} class="w-full h-full object-cover scale-125 object-[center_15%]" />
+              </div>
+            ) : (
+              <div class={`w-14 h-14 rounded-2xl flex items-center justify-center text-lg font-bold font-[family-name:var(--font-display)] shrink-0 ${i === 0 ? "bg-white/[0.1] text-white" : "bg-mf-green/[0.08] text-mf-green border border-mf-green/[0.1]"}`}>
+                {member.name.split(" ").map(n => n[0]).slice(0, 2).join("")}
+              </div>
+            )}
+            <div class="flex-1">
+              <h3 class={`font-[family-name:var(--font-display)] text-lg font-bold mb-0.5 ${i === 0 ? "text-white" : "text-slate-deep"}`}>{member.name}</h3>
+              <p class={`text-sm font-medium mb-4 ${i === 0 ? "text-mf-green-light" : "text-mf-green"}`}>{member.role}</p>
+              <div class={`flex flex-wrap gap-x-6 gap-y-2 text-sm ${i === 0 ? "text-white/60" : "text-slate-mid"}`}>
+                <a href={`tel:${member.phone}`} class={`hover:${i === 0 ? "text-white" : "text-mf-green"} transition-colors flex items-center gap-1.5`}>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {member.phone}
+                </a>
+                <a href={`mailto:${member.email}`} class={`hover:${i === 0 ? "text-white" : "text-mf-green"} transition-colors flex items-center gap-1.5`}>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke-width="1.2"/><path d="M22 7l-10 6L2 7" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  {member.email}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

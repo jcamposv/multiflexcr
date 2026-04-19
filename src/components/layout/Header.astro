@@ -1,0 +1,82 @@
+---
+import { navigation, siteConfig } from "../../data/site";
+import MobileMenu from "./MobileMenu";
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white" id="top">
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between lg:justify-start">
+      <a href="/" class="flex items-center shrink-0 lg:mr-48 py-4">
+        <img src="/logo.png" alt={siteConfig.name} class="h-14 w-auto object-contain" />
+      </a>
+
+      <div class="nav-bar hidden lg:flex flex-1 items-center justify-between pl-8 pr-8 py-4">
+        <nav id="main-nav" class="flex items-center gap-7" aria-label="Navegación principal">
+          {navigation.map((item) => (
+            <a href={item.href} class="nav-link text-[13px] font-medium text-white/50 hover:text-white transition-colors">
+              {item.label}
+            </a>
+          ))}
+        </nav>
+
+        <a href="#contacto" class="inline-flex items-center gap-2 bg-white/[0.1] hover:bg-white/[0.18] border border-white/[0.15] text-white font-medium rounded-full px-5 py-2 text-[13px] transition-all">
+          Contacto
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
+        </a>
+      </div>
+
+      <div class="lg:hidden">
+        <MobileMenu client:load />
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const links = document.querySelectorAll<HTMLAnchorElement>("#main-nav .nav-link");
+  const sectionIds = ["nosotros", "servicios", "proceso", "equipo", "contacto"];
+  const sections = sectionIds.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+
+  function setActive(activeLink: HTMLAnchorElement | null) {
+    links.forEach((l) => l.classList.remove("is-active"));
+    activeLink?.classList.add("is-active");
+  }
+
+  function onScroll() {
+    const y = window.scrollY + 150;
+
+    // If near top, activate Inicio
+    if (y < 300) {
+      setActive(links[0]);
+      return;
+    }
+
+    // Find last section that has been scrolled past
+    for (let i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].offsetTop <= y) {
+        // +1 because links[0] is "Inicio"
+        setActive(links[i + 1]);
+        return;
+      }
+    }
+
+    setActive(links[0]);
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+</script>
+
+<style>
+  .nav-bar {
+    background-color: var(--color-mf-blue-deeper);
+    border-bottom-left-radius: 2.5rem;
+    margin-right: calc(-50vw + 50%);
+    padding-right: calc(50vw - 50% + 2rem);
+  }
+  :global(.nav-link.is-active) {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+  }
+</style>
