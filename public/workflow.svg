@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 623 481">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill: #22c55e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+        isolation: isolate;
+      }
+
+      .cls-1, .cls-11 {
+        opacity: .3;
+      }
+
+      .cls-2 {
+        opacity: .4;
+      }
+
+      .cls-3 {
+        opacity: .6;
+      }
+
+      .cls-4 {
+        opacity: .5;
+      }
+
+      .cls-13 {
+        stroke-linejoin: round;
+      }
+
+      .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18 {
+        fill: none;
+      }
+
+      .cls-13, .cls-18 {
+        stroke: #22c55e;
+        stroke-linecap: round;
+        stroke-width: 1.8px;
+      }
+
+      .cls-19 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-14 {
+        stroke: rgba(34, 197, 94, .25);
+        stroke-dasharray: 4 8;
+      }
+
+      .cls-14, .cls-20, .cls-21 {
+        stroke-width: 1.5px;
+      }
+
+      .cls-15 {
+        stroke: rgba(255, 255, 255, .06);
+      }
+
+      .cls-5 {
+        font-size: 11px;
+        letter-spacing: .05em;
+      }
+
+      .cls-5, .cls-6, .cls-8, .cls-9 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-16 {
+        stroke: rgba(255, 255, 255, .04);
+      }
+
+      .cls-6 {
+        font-size: 12px;
+        letter-spacing: .04em;
+      }
+
+      .cls-17 {
+        stroke: rgba(34, 197, 94, .15);
+      }
+
+      .cls-20 {
+        fill: #0f172a;
+        stroke: rgba(34, 197, 94, .4);
+      }
+
+      .cls-22, .cls-8, .cls-9, .cls-11, .cls-12 {
+        fill: #fff;
+      }
+
+      .cls-23 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-23, .cls-24, .cls-25 {
+        stroke: rgba(255, 255, 255, .12);
+      }
+
+      .cls-24 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-25 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-26 {
+        fill: rgba(34, 197, 94, .15);
+      }
+
+      .cls-26, .cls-21 {
+        stroke: rgba(34, 197, 94, .5);
+      }
+
+      .cls-8 {
+        font-size: 10px;
+        letter-spacing: .24em;
+      }
+
+      .cls-21 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        font-size: 13px;
+      }
+
+      .cls-10 {
+        fill: #94a3b8;
+        font-family: Helvetica, Helvetica;
+        font-size: 10.5px;
+      }
+
+      .cls-12 {
+        opacity: .25;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="13.69" cy="660.18" fx="13.69" fy="660.18" r=".5" gradientTransform="translate(-2426.5 132277.47) scale(200 -200)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22c55e" stop-opacity=".4"/>
+      <stop offset=".4" stop-color="#22c55e" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="13.64" y1="659.82" x2="13.64" y2="658.82" gradientTransform="translate(-2006.5 59424.58) scale(170 -90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22c55e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity=".04"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.64" y1="659.82" x2="13.64" y2="658.82" gradientTransform="translate(-1806.5 59579.58) scale(170 -90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e293b" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" gradientTransform="translate(-2006.5 59734.58) scale(170 -90)" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" gradientTransform="translate(-2206.5 59579.58) scale(170 -90)" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <circle class="cls-16" cx="311.5" cy="240.5" r="240"/>
+    <circle class="cls-14" cx="311.5" cy="240.5" r="180"/>
+    <circle class="cls-15" cx="311.5" cy="240.5" r="110"/>
+    <circle class="cls-19" cx="311.5" cy="240.5" r="100"/>
+    <circle class="cls-20" cx="311.5" cy="240.5" r="68"/>
+    <circle class="cls-17" cx="311.5" cy="240.5" r="60"/>
+    <circle class="cls-7" cx="311.5" cy="240.5" r="6"/>
+    <circle class="cls-22" cx="311.5" cy="240.5" r="3"/>
+    <text class="cls-8" transform="translate(289.95 218.5)"><tspan x="0" y="0">CICLO</tspan></text>
+    <text class="cls-6" transform="translate(261.75 270.5)"><tspan x="0" y="0">Mejora continua</tspan></text>
+    <path class="cls-3" d="M488.04,178.68l-3.15,13.04-8.54-10.34,6.52,1.57,5.17-4.27Z"/>
+    <path class="cls-3" d="M414.48,397.17l-13.37-1.11,8.91-10.03-.56,6.69,5.01,4.46Z"/>
+    <path class="cls-3" d="M133.08,300.22l3.15-13.04,8.54,10.34-6.52-1.57-5.17,4.27Z"/>
+    <path class="cls-3" d="M207.8,83.5l13.39.81-8.68,10.23.4-6.7-5.11-4.34Z"/>
+    <g>
+      <rect class="cls-21" x="226.5" y="40.5" width="170" height="90" rx="14" ry="14"/>
+      <path class="cls-26" d="M250.5,54.5h12c5.52,0,10,4.48,10,10h0c0,5.52-4.48,10-10,10h-12c-5.52,0-10-4.48-10-10h0c0-5.52,4.48-10,10-10Z"/>
+      <text class="cls-5" transform="translate(249.88 68.5)"><tspan x="0" y="0">01</tspan></text>
+      <g>
+        <circle class="cls-18" cx="359.5" cy="64.5" r="6"/>
+        <line class="cls-18" x1="364.5" y1="69.5" x2="369.5" y2="74.5"/>
+      </g>
+      <text class="cls-9" transform="translate(240.5 98.5)"><tspan x="0" y="0">Diagnóstico</tspan></text>
+      <text class="cls-10" transform="translate(240.5 115.5)"><tspan x="0" y="0">Análisis de necesidades</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-23" x="426.5" y="195.5" width="170" height="90" rx="14" ry="14"/>
+      <path class="cls-26" d="M450.5,209.5h12c5.52,0,10,4.48,10,10h0c0,5.52-4.48,10-10,10h-12c-5.52,0-10-4.48-10-10h0c0-5.52,4.48-10,10-10Z"/>
+      <text class="cls-5" transform="translate(449.88 223.5)"><tspan x="0" y="0">02</tspan></text>
+      <g>
+        <path class="cls-13" d="M554.5,213.5h11l3,3v13h-14v-16Z"/>
+        <line class="cls-13" x1="557.5" y1="219.5" x2="564.5" y2="219.5"/>
+        <line class="cls-13" x1="557.5" y1="223.5" x2="564.5" y2="223.5"/>
+        <line class="cls-13" x1="557.5" y1="226.5" x2="561.5" y2="226.5"/>
+      </g>
+      <text class="cls-9" transform="translate(440.5 253.5)"><tspan x="0" y="0">Propuesta</tspan></text>
+      <text class="cls-10" transform="translate(440.5 270.5)"><tspan x="0" y="0">Solución personalizada</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-24" x="226.5" y="350.5" width="170" height="90" rx="14" ry="14"/>
+      <path class="cls-26" d="M250.5,364.5h12c5.52,0,10,4.48,10,10h0c0,5.52-4.48,10-10,10h-12c-5.52,0-10-4.48-10-10h0c0-5.52,4.48-10,10-10Z"/>
+      <text class="cls-5" transform="translate(249.88 378.5)"><tspan x="0" y="0">03</tspan></text>
+      <g>
+        <circle class="cls-13" cx="361.5" cy="376.5" r="3"/>
+        <path class="cls-13" d="M361.5,368.5v3M361.5,381.5v3M353.5,376.5h3M366.5,376.5h3M355.8,370.8l2.2,2.2M365,380l2.2,2.2M355.8,382.2l2.2-2.2M365,373l2.2-2.2"/>
+      </g>
+      <text class="cls-9" transform="translate(240.5 408.5)"><tspan x="0" y="0">Ejecución</tspan></text>
+      <text class="cls-10" transform="translate(240.5 425.5)"><tspan x="0" y="0">Equipo capacitado</tspan></text>
+    </g>
+    <g>
+      <rect class="cls-25" x="26.5" y="195.5" width="170" height="90" rx="14" ry="14"/>
+      <path class="cls-26" d="M50.5,209.5h12c5.52,0,10,4.48,10,10h0c0,5.52-4.48,10-10,10h-12c-5.52,0-10-4.48-10-10h0c0-5.52,4.48-10,10-10Z"/>
+      <text class="cls-5" transform="translate(49.88 223.5)"><tspan x="0" y="0">04</tspan></text>
+      <g>
+        <line class="cls-13" x1="154.5" y1="228.5" x2="168.5" y2="228.5"/>
+        <rect class="cls-13" x="156.5" y="221.5" width="3" height="6"/>
+        <rect class="cls-13" x="161.5" y="217.5" width="3" height="10"/>
+        <rect class="cls-13" x="166.5" y="223.5" width=".1" height="4"/>
+        <line class="cls-13" x1="166.5" y1="227.5" x2="166.5" y2="223.5"/>
+        <polyline class="cls-13" points="156.5 219.5 160.5 215.5 164.5 217.5 168.5 213.5"/>
+      </g>
+      <text class="cls-9" transform="translate(40.5 253.5)"><tspan x="0" y="0">Supervisión</tspan></text>
+      <text class="cls-10" transform="translate(40.5 270.5)"><tspan x="0" y="0">KPIs y reportes</tspan></text>
+    </g>
+    <circle class="cls-4" cx="41.5" cy="60.5" r="1.5"/>
+    <circle class="cls-1" cx="581.5" cy="70.5" r="1.5"/>
+    <circle class="cls-2" cx="1.5" cy="340.5" r="1.5"/>
+    <circle class="cls-4" cx="621.5" cy="400.5" r="1.5"/>
+    <circle class="cls-11" cx="81.5" cy="440.5" r="1.5"/>
+    <circle class="cls-12" cx="551.5" cy="460.5" r="1.5"/>
+  </g>
+</svg>
