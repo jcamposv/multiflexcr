@@ -22,7 +22,7 @@ export default function MobileMenu() {
           {navigation.map((item) => (
             <a key={item.href} href={item.href} onClick={() => setOpen(false)} className="text-3xl font-medium text-[#141c24] hover:text-[#1a8d4e] transition-colors" style={{ fontFamily: '"DM Serif Display", Georgia, serif' }}>{item.label}</a>
           ))}
-          <a href="#contacto" onClick={() => setOpen(false)} className="mt-6 bg-[#141c24] text-white font-medium rounded-full px-8 py-3.5 text-sm hover:bg-[#0c2134] transition-colors">
+          <a href="/#contacto" onClick={() => setOpen(false)} className="mt-6 bg-[#141c24] text-white font-medium rounded-full px-8 py-3.5 text-sm hover:bg-[#0c2134] transition-colors">
             Contacto
           </a>
         </div>

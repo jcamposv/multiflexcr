@@ -1,6 +1,7 @@
 ---
 import { siteConfig } from "../data/site";
 import "../styles/global.css";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 interface Props { title?: string; description?: string; }
 const { title = siteConfig.title, description = siteConfig.description } = Astro.props;
@@ -86,11 +87,12 @@ const { title = siteConfig.title, description = siteConfig.description } = Astro
   </head>
   <body class="min-h-screen overflow-x-hidden">
     <slot />
+    <WhatsAppButton client:load />
 
     <script>
       document.addEventListener("click", (e) => {
         const target = e.target as HTMLElement;
-        const link = target.closest('a[href="#top"]') as HTMLAnchorElement | null;
+        const link = target.closest('a[href="/#top"], a[href="#top"]') as HTMLAnchorElement | null;
         if (link) { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
       });
 

@@ -9,12 +9,12 @@ export const siteConfig = {
 };
 
 export const navigation = [
-  { label: "Inicio", href: "#top" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Equipo", href: "#equipo" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Inicio", href: "/#top" },
+  { label: "Nosotros", href: "/#nosotros" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Proceso", href: "/#proceso" },
+  { label: "Equipo", href: "/#equipo" },
+  { label: "Contacto", href: "/#contacto" },
 ];
 
 export const hero = {
@@ -98,6 +98,16 @@ export const services = {
       description: "Planificación, coordinación y ejecución de proyectos relacionados con infraestructura, adecuaciones, mantenimiento mayor, mejoras operativas, industria y manufactura. Incluye control de tiempos SLA, costos, presupuestos, recursos, calidad QA y reportes KPI de resultados.",
       icon: "project",
     },
+    {
+      title: "Administración y Gestión de Residuos",
+      description: "Organización y control integral del ciclo de residuos, desde su generación hasta la disposición final. Incluye separación, recolección, transporte, tratamiento y valorización, buscando aprovechar lo reciclable y reducir el impacto en la salud y el ambiente.",
+      icon: "waste",
+    },
+    {
+      title: "Asistencia de Pacientes Geriátricos",
+      description: "Cuidados profesionales destinados a personas adultas mayores para mantener su salud, bienestar y calidad de vida. Incluye apoyo en actividades diarias, supervisión médica básica y acompañamiento emocional, tanto en el hogar como en centros especializados.",
+      icon: "geriatric",
+    },
   ],
 };
 
@@ -147,7 +157,7 @@ export const team = {
       role: "Gerente General",
       phone: "6037-4348",
       email: "khenry@multiflexcr.com",
-      photo: "",
+      photo: "/kevin.jpeg",
     },
     {
       name: "Verónica Castro Gómez",
