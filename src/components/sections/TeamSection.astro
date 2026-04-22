@@ -18,8 +18,8 @@ import { team } from "../../data/site";
         {team.members.map((member, i) => (
           <div class={`flex items-start gap-6 rounded-[1.25rem] p-7 border border-black/[0.04] ${i === 0 ? "bg-mf-blue-deeper text-white" : "bg-ivory"}`}>
             {member.photo ? (
-              <div class="w-20 h-20 rounded-full shrink-0 bg-gradient-to-b from-mf-green/10 to-mf-blue/10 border-2 border-mf-green/20 overflow-hidden">
-                <img src={member.photo} alt={member.name} class="w-full h-full object-cover scale-125 object-[center_15%]" />
+              <div class="w-20 h-20 rounded-xl shrink-0 bg-gradient-to-b from-mf-green/10 to-mf-blue/10 border-2 border-mf-green/20 overflow-hidden">
+                <img src={member.photo} alt={member.name} class="w-full h-full object-cover object-top" />
               </div>
             ) : (
               <div class={`w-14 h-14 rounded-2xl flex items-center justify-center text-lg font-bold font-[family-name:var(--font-display)] shrink-0 ${i === 0 ? "bg-white/[0.1] text-white" : "bg-mf-green/[0.08] text-mf-green border border-mf-green/[0.1]"}`}>
