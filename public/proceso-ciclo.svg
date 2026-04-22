@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560" fill="none">
+  <defs>
+    <!-- GREEN GLOW FILTERS -->
+    <filter id="greenGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- CENTRAL CORE GRADIENT -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#22C55E" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- CARD GRADIENT -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- CARD GRADIENT ACTIVE (first step, highlighted) -->
+    <linearGradient id="cardBgActive" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <!-- ARROW MARKER -->
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 L2,4 Z" fill="#22C55E" opacity="0.6"/>
+    </marker>
+
+    <!-- CONSTELLATION DOTS PATTERN -->
+    <pattern id="dotGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.8" fill="#FFFFFF" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- SUBTLE DOT GRID BACKGROUND -->
+  <rect width="720" height="560" fill="url(#dotGrid)"/>
+
+  <!-- ================== ORBITAL RINGS ================== -->
+  <!-- Outer decorative ring -->
+  <circle cx="360" cy="280" r="240" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Main dashed orbit -->
+  <circle cx="360" cy="280" r="180" fill="none" stroke="#22C55E" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 8"/>
+
+  <!-- Inner ring -->
+  <circle cx="360" cy="280" r="110" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- ================== CENTRAL CORE ================== -->
+  <!-- Soft glow aura -->
+  <circle cx="360" cy="280" r="100" fill="url(#coreGlow)"/>
+
+  <!-- Core disc -->
+  <circle cx="360" cy="280" r="68" fill="#0F172A" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- Inner highlight -->
+  <circle cx="360" cy="280" r="60" fill="none" stroke="#22C55E" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Core pulse dot -->
+  <circle cx="360" cy="280" r="6" fill="#22C55E" filter="url(#softGlow)"/>
+  <circle cx="360" cy="280" r="3" fill="#FFFFFF"/>
+
+  <!-- Core label -->
+  <text x="360" y="258" text-anchor="middle" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="2.4">CICLO</text>
+  <text x="360" y="310" text-anchor="middle" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">Mejora continua</text>
+
+  <!-- ================== CONNECTING ARROWS (curved, between nodes) ================== -->
+  <!-- 01 → 02 (top to right) -->
+  <path d="M 465 138 Q 540 170 555 235" fill="none" stroke="#22C55E" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 5" marker-end="url(#arrowhead)"/>
+
+  <!-- 02 → 03 (right to bottom) -->
+  <path d="M 555 330 Q 540 395 465 425" fill="none" stroke="#22C55E" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 5" marker-end="url(#arrowhead)"/>
+
+  <!-- 03 → 04 (bottom to left) -->
+  <path d="M 255 425 Q 180 395 165 330" fill="none" stroke="#22C55E" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 5" marker-end="url(#arrowhead)"/>
+
+  <!-- 04 → 01 (left to top) - completing the cycle -->
+  <path d="M 165 235 Q 180 170 255 138" fill="none" stroke="#22C55E" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 5" marker-end="url(#arrowhead)"/>
+
+  <!-- ================== NODE 01 — TOP (Diagnóstico) ================== -->
+  <g>
+    <!-- Card -->
+    <rect x="275" y="80" width="170" height="90" rx="14" fill="url(#cardBgActive)" stroke="#22C55E" stroke-opacity="0.5" stroke-width="1.5" filter="url(#greenGlow)"/>
+    <!-- Number badge -->
+    <rect x="289" y="94" width="32" height="20" rx="10" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="305" y="108" text-anchor="middle" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">01</text>
+    <!-- Icon: magnifying glass (diagnostic) -->
+    <g transform="translate(400, 96)" stroke="#22C55E" stroke-width="1.8" fill="none" stroke-linecap="round">
+      <circle cx="8" cy="8" r="6"/>
+      <line x1="13" y1="13" x2="18" y2="18"/>
+    </g>
+    <!-- Title -->
+    <text x="289" y="138" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Diagnóstico</text>
+    <text x="289" y="155" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="400">Análisis de necesidades</text>
+  </g>
+
+  <!-- ================== NODE 02 — RIGHT (Propuesta) ================== -->
+  <g>
+    <rect x="475" y="235" width="170" height="90" rx="14" fill="url(#cardBg)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+    <rect x="489" y="249" width="32" height="20" rx="10" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="505" y="263" text-anchor="middle" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">02</text>
+    <!-- Icon: document with lines -->
+    <g transform="translate(600, 251)" stroke="#22C55E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 2 L14 2 L17 5 L17 18 L3 18 Z"/>
+      <line x1="6" y1="8" x2="13" y2="8"/>
+      <line x1="6" y1="12" x2="13" y2="12"/>
+      <line x1="6" y1="15" x2="10" y2="15"/>
+    </g>
+    <text x="489" y="293" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Propuesta</text>
+    <text x="489" y="310" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="400">Solución personalizada</text>
+  </g>
+
+  <!-- ================== NODE 03 — BOTTOM (Ejecución) ================== -->
+  <g>
+    <rect x="275" y="390" width="170" height="90" rx="14" fill="url(#cardBg)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+    <rect x="289" y="404" width="32" height="20" rx="10" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="305" y="418" text-anchor="middle" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">03</text>
+    <!-- Icon: gear/execution -->
+    <g transform="translate(400, 406)" stroke="#22C55E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10" cy="10" r="3"/>
+      <path d="M10 2 L10 5 M10 15 L10 18 M2 10 L5 10 M15 10 L18 10 M4.3 4.3 L6.5 6.5 M13.5 13.5 L15.7 15.7 M4.3 15.7 L6.5 13.5 M13.5 6.5 L15.7 4.3"/>
+    </g>
+    <text x="289" y="448" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Ejecución</text>
+    <text x="289" y="465" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="400">Equipo capacitado</text>
+  </g>
+
+  <!-- ================== NODE 04 — LEFT (Supervisión) ================== -->
+  <g>
+    <rect x="75" y="235" width="170" height="90" rx="14" fill="url(#cardBg)" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+    <rect x="89" y="249" width="32" height="20" rx="10" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="105" y="263" text-anchor="middle" fill="#22C55E" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">04</text>
+    <!-- Icon: chart/KPI -->
+    <g transform="translate(200, 251)" stroke="#22C55E" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="17" x2="17" y2="17"/>
+      <rect x="5" y="10" width="3" height="6"/>
+      <rect x="10" y="6" width="3" height="10"/>
+      <rect x="15" y="12" width="0.1" height="4"/>
+      <line x1="15" y1="16" x2="15" y2="12"/>
+      <polyline points="5,8 9,4 13,6 17,2"/>
+    </g>
+    <text x="89" y="293" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">Supervisión</text>
+    <text x="89" y="310" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="10.5" font-weight="400">KPIs y reportes</text>
+  </g>
+
+  <!-- ================== SUBTLE FLOATING ACCENT DOTS ================== -->
+  <circle cx="90" cy="100" r="1.5" fill="#22C55E" opacity="0.5"/>
+  <circle cx="630" cy="110" r="1.5" fill="#22C55E" opacity="0.3"/>
+  <circle cx="50" cy="380" r="1.5" fill="#22C55E" opacity="0.4"/>
+  <circle cx="670" cy="440" r="1.5" fill="#22C55E" opacity="0.5"/>
+  <circle cx="130" cy="480" r="1.5" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="600" cy="500" r="1.5" fill="#FFFFFF" opacity="0.25"/>
+
+</svg>
