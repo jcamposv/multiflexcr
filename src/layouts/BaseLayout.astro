@@ -2,6 +2,7 @@
 import { siteConfig } from "../data/site";
 import "../styles/global.css";
 import WhatsAppButton from "../components/WhatsAppButton";
+import Analytics from "@vercel/analytics/astro";
 
 interface Props { title?: string; description?: string; }
 const { title = siteConfig.title, description = siteConfig.description } = Astro.props;
@@ -88,6 +89,7 @@ const { title = siteConfig.title, description = siteConfig.description } = Astro
   <body class="min-h-screen overflow-x-hidden">
     <slot />
     <WhatsAppButton client:load />
+    <Analytics />
 
     <script>
       document.addEventListener("click", (e) => {

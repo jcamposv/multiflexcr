@@ -176,9 +176,6 @@ export const contact = {
 };
 
 export const footer = {
-  sections: {
-    servicios: ["Limpieza", "Mantenimiento", "Outsourcing", "Seguridad", "Control de Plagas", "Jardinería", "Gestión de Proyectos", "Gestión de Residuos", "Asistencia Geriátrica"],
-  },
   contact: {
     address: "Costa Rica",
     phones: [
